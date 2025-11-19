@@ -4,6 +4,21 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=goodnbadexe&label=Profile%20views&color=0e75b6&style=flat" alt="goodnbadexe" />
 </p>
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=goodnbadexe&show_icons=true&theme=radical" alt="github stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=goodnbadexe&theme=radical" alt="github streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goodnbadexe&layout=compact&theme=radical" alt="top langs" />
+</p>
 
 ---
 
@@ -92,22 +107,6 @@
   <a href="https://www.adobe.com/products/xd.html"><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd-2.svg" alt="Adobe XD" width="40" height="40"/></a>
   <a href="https://www.sketch.com/"><img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="Sketch" width="40" height="40"/></a>
   <a href="https://www.blender.org/"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="Blender" width="40" height="40"/></a>
-</p>
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=goodnbadexe&show_icons=true&theme=radical" alt="github stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=goodnbadexe&theme=radical" alt="github streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goodnbadexe&layout=compact&theme=radical" alt="top langs" />
 </p>
 
 ---
