@@ -29,7 +29,7 @@ OPERATOR_ID          : goodnbadexe
 CLASSIFICATION       : Cybersecurity Specialist | Creative Technologist
 CLEARANCE_LEVEL      : Google Certified Security Professional
 STATUS               : ████████████ [ACTIVE] | ⚡ ONLINE
-GEOLOCATION          : Global Operations Theater (MY 🇲🇾 → SA 🇸🇦)
+GEOLOCATION          : Global Operations Theater ( 🇸🇦 → 🇲🇾 → 🇸🇦 )
 EXPERIENCE           : 6+ Years | Multi-Discipline Warfare
 PRIMARY_MISSION      : Building resilient systems at the intersection
                        of security, creativity, and innovation
