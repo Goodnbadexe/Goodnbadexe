@@ -1,11 +1,5 @@
 <div align="center">
 
-<!-- <CHANGE> Changed cyan to DedSec green (#00FF41) theme -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=120&section=header&text=SYSTEM%20INITIALIZING&fontSize=40&fontColor=0a0a0a&animation=twinkling&fontAlignY=35" width="100%"/>
-
-<!-- <CHANGE> Added DedSec dotted skull animation banner -->
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="DedSec Activity"/>
-
 ```
    ██████╗ ██████╗  ██████╗ ██████╗ ███╗   ██╗██████╗  █████╗ ██████╗ ███████╗██╗  ██╗███████╗
   ██╔════╝ ██╔═══██╗██╔═══██╗██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝╚██╗██╔╝██╔════╝
@@ -14,6 +8,13 @@
   ╚██████╔╝╚██████╔╝╚██████╔╝██████╔╝██║ ╚████║██████╔╝██║  ██║██████╔╝███████╗██╔╝ ██╗███████╗
    ╚═════╝  ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝
 ```
+
+<!-- <CHANGE> Changed cyan to DedSec green (#00FF41) theme -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=120&section=header&text=SYSTEM%20INITIALIZING&fontSize=40&fontColor=0a0a0a&animation=twinkling&fontAlignY=35" width="100%"/>
+
+<!-- <CHANGE> Added DedSec dotted skull animation banner -->
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="DedSec Activity"/>
+
 
 <!-- <CHANGE> Updated typing animation to DedSec green -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2500&pause=800&color=00FF41&center=true&vCenter=true&random=false&width=800&lines=Cybersecurity+Specialist+%7C+6%2B+Years;Creative+Technologist+%7C+System+Architect;Ethical+Hacker+%7C+Google+Certified;Event+Tech+Pioneer+%7C+Gaming+Content+Creator;DedSec+Operative+%7C+Wrench+Protocol+Active;Building+Systems+That+Protect%2C+Create+%26+Innovate" alt="Dynamic Identity" />
