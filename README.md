@@ -122,17 +122,22 @@ SYSTEM_INTEGRITY     : ██████████ [100% OPERATIONAL]
 
 <div align="center">
 
-**GitHub Performance Metrics**
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Goodnbadexe&show_icons=true&theme=dark&bg_color=0a0a0a&title_color=00FF41&text_color=00FF41&icon_color=00FF41&border_color=00FF41)
-
-**Tech Stack Analysis**
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Goodnbadexe&layout=compact&theme=dark&bg_color=0a0a0a&title_color=00FF41&text_color=00FF41&border_color=00FF41)
-
 **Contribution Activity**
 
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=Goodnbadexe&theme=react-dark&hide_border=true&bg_color=0a0a0a&color=00FF41&line=00FF41&point=00FF41)
+
+**Command Access**
+```
+Repository Stats: github.com/Goodnbadexe?tab=repositories
+Contribution Analysis: github.com/Goodnbadexe?tab=contributions
+Profile Overview: github.com/Goodnbadexe
+```
+
+**Performance Indicators**
+- Total Repositories: 2+ Active Projects
+- Primary Languages: JavaScript, Python, Bash
+- Contribution Streak: Continuous Development
+- Status: ✅ Actively Maintaining
 
 </div>
 
