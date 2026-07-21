@@ -1,4 +1,4 @@
-<!-- GOODNBAD · profile identity -->
+<!-- GOODNBAD.EXE · operator file -->
 <!-- deck note: Batman = tone · Wrench = mask · the rest is signal, not noise -->
 
 <table align="center">
@@ -14,22 +14,38 @@
 
 <div align="center">
 
-# GOODNBAD // CYBERSECURITY × CODE × ART
+# GOODNBAD.EXE // CYBERSECURITY × CREATIVE TECHNOLOGY
 
-**Security-minded builder from Riyadh.**
-I defend the systems people trust — turning code, forensics, and visual
-thinking into work that is safer, clearer, and harder to ignore.
+I build secure systems, automate messy work, and turn technical ideas into clear experiences.
 
 `Maintain` · `Connect` · `Advance`
 
-Cybersecurity graduate — **defensive security · incident response · digital forensics**
+</div>
 
-<br>
+### ⌁ OPERATOR FILE
 
-`Blue Team` · `DFIR` · `Python` · `Web` · `Creative Systems`
+| field | value |
+|:--|:--|
+| `ROLE`   | Defensive security · DFIR · incident response |
+| `BUILD`  | Secure systems · automation · creative technology |
+| `BASE`   | Riyadh, SA |
+| `STACK`  | Blue Team · Python · Web · Creative Systems |
+| `STATUS` | `operational` — maintain · connect · advance |
 
-<br>
+### ⌁ CAPABILITIES
+
+- 🛡 **Defend** — monitoring, incident response, and forensics on the systems people trust
+- ⚙ **Automate** — turning messy, manual work into reliable pipelines
+- ✦ **Craft** — code × art: interfaces that are clear and hard to ignore
+
+### ⌁ RECENT SIGNAL
+
+<!-- SIGNAL:START -->
+<sub>syncing latest repositories…</sub>
+<!-- SIGNAL:END -->
+
+### ⌁ CONTACT
 
 [**Portfolio**](https://goodnbad.info) · [**LinkedIn**](https://www.linkedin.com/in/goodnbadexe/) · [**Email**](mailto:alramli.hamzah@gmail.com)
 
-</div>
+<sub>Cybersecurity graduate · defensive security · incident response · digital forensics</sub>
