@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" width="560" height="380" role="img" aria-label="goodnbad terminal — live identity feed">
+  <defs>
+    <pattern id="g2" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#00e5ff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff2e88"/>
+    </linearGradient>
+    <clipPath id="l1"><rect x="40" y="86" width="0" height="26"><animate attributeName="width" values="0;0;300;300;300;0" keyTimes="0;0.02;0.16;0.9;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l2"><rect x="40" y="118" width="0" height="26"><animate attributeName="width" values="0;0;360;360;360;0" keyTimes="0;0.18;0.32;0.9;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l3"><rect x="40" y="162" width="0" height="26"><animate attributeName="width" values="0;0;300;300;300;0" keyTimes="0;0.34;0.46;0.9;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l4"><rect x="40" y="194" width="0" height="26"><animate attributeName="width" values="0;0;420;420;420;0" keyTimes="0;0.48;0.62;0.9;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l5"><rect x="40" y="226" width="0" height="26"><animate attributeName="width" values="0;0;420;420;420;0" keyTimes="0;0.64;0.76;0.9;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="l6"><rect x="40" y="270" width="0" height="26"><animate attributeName="width" values="0;0;430;430;430;0" keyTimes="0;0.78;0.9;0.94;0.97;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <!-- window -->
+  <rect width="560" height="380" rx="12" fill="#0a0a0d"/>
+  <rect width="560" height="380" rx="12" fill="url(#g2)"/>
+  <rect x="1.5" y="1.5" width="557" height="377" rx="11" fill="none" stroke="#1f2530" stroke-width="1.5"/>
+  <rect x="1.5" y="1.5" width="557" height="377" rx="11" fill="none" stroke="url(#bar)" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- title bar -->
+  <g font-family="'DejaVu Sans Mono','Courier New',monospace">
+    <circle cx="28" cy="30" r="6" fill="#ff2e88"/><circle cx="48" cy="30" r="6" fill="#ffb020"/><circle cx="68" cy="30" r="6" fill="#3fb950"/>
+    <text x="280" y="35" text-anchor="middle" font-size="14" fill="#7d8590" letter-spacing="1">goodnbad@sec: ~ /identity</text>
+    <!-- glitch RGB-split ghost of the title -->
+    <text x="282" y="35" text-anchor="middle" font-size="14" fill="#00e5ff" opacity="0">goodnbad@sec: ~ /identity
+      <animate attributeName="opacity" values="0;0;0.6;0" keyTimes="0;0.44;0.46;0.5" dur="9s" repeatCount="indefinite"/></text>
+    <text x="278" y="35" text-anchor="middle" font-size="14" fill="#ff2e88" opacity="0">goodnbad@sec: ~ /identity
+      <animate attributeName="opacity" values="0;0;0.6;0" keyTimes="0;0.44;0.47;0.51" dur="9s" repeatCount="indefinite"/></text>
+    <line x1="16" y1="52" x2="544" y2="52" stroke="#1f2530"/>
+
+    <!-- typed lines -->
+    <g font-size="17">
+      <text x="40" y="105" fill="#7d8590" clip-path="url(#l1)"><tspan fill="#00e5ff">goodnbad@sec</tspan>:~$ whoami</text>
+      <text x="40" y="137" fill="#c9bdd6" clip-path="url(#l2)">&gt; security-minded builder — Riyadh</text>
+
+      <text x="40" y="181" fill="#7d8590" clip-path="url(#l3)"><tspan fill="#00e5ff">goodnbad@sec</tspan>:~$ cat creed.txt</text>
+      <text x="40" y="213" fill="#c9bdd6" clip-path="url(#l4)">&gt; defend the systems everyone trusts</text>
+      <text x="40" y="245" fill="#c9bdd6" clip-path="url(#l5)">&gt; <tspan fill="#00e5ff">code</tspan> × <tspan fill="#ff2e88">art</tspan> · DFIR · blue team</text>
+
+      <text x="40" y="289" fill="#eafcff" clip-path="url(#l6)">&gt; maintain · connect · advance</text>
+    </g>
+
+    <!-- glitch slice: a magenta shifted duplicate flickers over a line -->
+    <g opacity="0"><animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.6;0.615;0.63;1" dur="9s" repeatCount="indefinite"/>
+      <text x="46" y="213" font-size="17" fill="#ff2e88">&gt; defend the systems everyone trusts</text></g>
+
+    <!-- blinking cursor -->
+    <rect x="376" y="274" width="12" height="20" fill="#eafcff">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- status footer -->
+    <line x1="16" y1="322" x2="544" y2="322" stroke="#1f2530"/>
+    <g font-size="12.5" fill="#7d8590">
+      <circle cx="30" cy="350" r="4" fill="#3fb950"><animate attributeName="fill-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="44" y="354">status: <tspan fill="#3fb950">operational</tspan></text>
+      <text x="544" y="354" text-anchor="end">Blue Team · DFIR · Python · Web · Creative Systems</text>
+    </g>
+  </g>
+</svg>
