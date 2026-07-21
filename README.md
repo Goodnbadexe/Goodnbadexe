@@ -45,7 +45,7 @@ I build secure systems, automate messy work, and turn technical ideas into clear
 - [**thebuildsequence-assets**](https://github.com/Goodnbadexe/thebuildsequence-assets) — —
 - [**heyazah.sa**](https://github.com/Goodnbadexe/heyazah.sa) — new bweb  `PHP`
 - [**athr-website**](https://github.com/Goodnbadexe/athr-website) — athr-website  `TypeScript`
-- [**MagicB**](https://github.com/Goodnbadexe/MagicB) — Overall, the Magic Browser combines intelligent search, privacy and security features, customization options, and immersive technologies to create a powerful and user-friendly web browsing application. It aims to revolutionize the way users browse the internet and unlock new possibilities for productivity and enjoyment online.  `HTML`
+- [**MagicB**](https://github.com/Goodnbadexe/MagicB) — Overall, the Magic Browser combines intelligent search, privacy and security feature…  `HTML`
 <!-- SIGNAL:END -->
 
 ### ⌁ CONTACT
