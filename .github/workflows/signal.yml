@@ -37,7 +37,8 @@ jobs:
               | select(.name != "'"${OWNER}"'")
             ][:5]
             | .[]
-            | "- [**\(.name)**](\(.html_url)) — \(.description // "—")"
+            | ((.description // "—") | if (length > 84) then (.[0:84] | rtrimstr(" ")) + "…" else . end) as $desc
+            | "- [**\(.name)**](\(.html_url)) — \($desc)"
                 + (if .language then "  `\(.language)`" else "" end)
           ' > block.md || true
 
