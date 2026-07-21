@@ -1,0 +1,75 @@
+name: Update RECENT SIGNAL
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily ~06:17 UTC
+  workflow_dispatch:        # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"         # avoid retriggering on the bot's own commit
+
+concurrency:
+  group: recent-signal
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build latest-repos block and inject into README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+
+          # 5 most-recently-pushed public, non-fork repos (excluding the profile repo itself)
+          gh api "users/${OWNER}/repos?sort=pushed&per_page=100" --jq '
+            [ .[]
+              | select(.fork == false)
+              | select(.private == false)
+              | select(.name != "'"${OWNER}"'")
+            ][:5]
+            | .[]
+            | "- [**\(.name)**](\(.html_url)) — \(.description // "—")"
+                + (if .language then "  `\(.language)`" else "" end)
+          ' > block.md || true
+
+          if [ ! -s block.md ]; then
+            echo "<sub>no public repositories to show yet</sub>" > block.md
+          fi
+
+          python3 - <<'PY'
+          import re, pathlib
+          readme = pathlib.Path("README.md")
+          text = readme.read_text(encoding="utf-8")
+          block = pathlib.Path("block.md").read_text(encoding="utf-8").strip()
+          new = f"<!-- SIGNAL:START -->\n{block}\n<!-- SIGNAL:END -->"
+          text2 = re.sub(r"<!-- SIGNAL:START -->.*?<!-- SIGNAL:END -->", new, text, flags=re.S)
+          if text2 != text:
+              readme.write_text(text2, encoding="utf-8")
+              print("README updated")
+          else:
+              print("no change")
+          PY
+
+          rm -f block.md
+
+      - name: Commit if changed
+        run: |
+          set -e
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: refresh RECENT SIGNAL [skip ci]"
+            git push
+          else
+            echo "Nothing to commit."
+          fi
