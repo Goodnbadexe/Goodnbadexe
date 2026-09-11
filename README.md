@@ -12,6 +12,19 @@
   </tr>
 </table>
 
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/portrait-light.svg">
+  <img src="./assets/portrait-dark.svg" width="86%" alt="ASCII portrait of Hamzah Al-Ramli, rendered from a photograph at 100 columns">
+</picture>
+
+<sub>rendered from a photograph &#183; 100 columns &#183; 21 glyphs, ramp calibrated by measured ink coverage</sub>
+
+</div>
+
 <div align="center">
 
 # GOODNBAD.EXE // CYBERSECURITY × CREATIVE TECHNOLOGY
