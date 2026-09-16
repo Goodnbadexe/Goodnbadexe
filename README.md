@@ -4,7 +4,7 @@
 <table align="center">
   <tr>
     <td width="42%" valign="middle">
-      <img src="./assets/operator-mask.svg" width="100%" alt="GOODNBAD — animated LED operator mask (original design, Watch Dogs-inspired)">
+      <img src="./assets/wrench-led.gif?v=1" width="100%" alt="Goodnbad — dithered Wrench-style mask with a live LED visor">
     </td>
     <td width="58%" valign="middle">
       <img src="./assets/signal.svg" width="100%" alt="Live terminal — security-minded builder from Riyadh">
