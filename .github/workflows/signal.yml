@@ -26,15 +26,22 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
+          # comma-separated repo names that must never appear in the signal block
+          SIGNAL_DENY: "hello"
         run: |
           set -euo pipefail
 
-          # 5 most-recently-pushed public, non-fork repos (excluding the profile repo itself)
+          # 5 most-recently-pushed public, non-fork, non-archived repos that carry a
+          # description (a repo with no description reads as noise in the signal block),
+          # excluding the profile repo itself and the SIGNAL_DENY list.
           gh api "users/${OWNER}/repos?sort=pushed&per_page=100" --jq '
             [ .[]
               | select(.fork == false)
               | select(.private == false)
+              | select(.archived == false)
+              | select((.description // "") | length > 0)
               | select(.name != "'"${OWNER}"'")
+              | select(.name as $n | ("'"${SIGNAL_DENY}"'" | split(",") | index($n)) == null)
             ][:5]
             | .[]
             | ((.description // "—") | if (length > 84) then (.[0:84] | rtrimstr(" ")) + "…" else . end) as $desc

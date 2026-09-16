@@ -12,19 +12,6 @@
   </tr>
 </table>
 
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/portrait-light.svg">
-  <img src="./assets/portrait-dark.svg" width="86%" alt="ASCII portrait of Hamzah Al-Ramli, rendered from a photograph at 100 columns">
-</picture>
-
-<sub>rendered from a photograph &#183; 100 columns &#183; 21 glyphs, ramp calibrated by measured ink coverage</sub>
-
-</div>
-
 <div align="center">
 
 # GOODNBAD.EXE // CYBERSECURITY × CREATIVE TECHNOLOGY
@@ -39,17 +26,13 @@ I build secure systems, automate messy work, and turn technical ideas into clear
 
 | field | value |
 |:--|:--|
-| `ROLE`   | Defensive security · DFIR · incident response |
-| `BUILD`  | Secure systems · automation · creative technology |
-| `BASE`   | Riyadh, SA |
-| `STACK`  | Blue Team · Python · Web · Creative Systems |
-| `STATUS` | `operational` — maintain · connect · advance |
-
-### ⌁ CAPABILITIES
-
-- 🛡 **Defend** — monitoring, incident response, and forensics on the systems people trust
-- ⚙ **Automate** — turning messy, manual work into reliable pipelines
-- ✦ **Craft** — code × art: interfaces that are clear and hard to ignore
+| `ROLE`     | Defensive security · DFIR · incident response |
+| `BASE`     | Riyadh, SA |
+| `STACK`    | Blue Team · Python · Web · Creative Systems |
+| `DEFEND`   | Monitoring, incident response, and forensics on the systems people trust |
+| `AUTOMATE` | Turning messy, manual work into reliable pipelines |
+| `CRAFT`    | Code × art: interfaces that are clear and hard to ignore |
+| `STATUS`   | `operational` — maintain · connect · advance |
 
 ### ⌁ RECENT SIGNAL
 
@@ -66,3 +49,20 @@ I build secure systems, automate messy work, and turn technical ideas into clear
 [**Portfolio**](https://goodnbad.info) · [**LinkedIn**](https://www.linkedin.com/in/goodnbadexe/) · [**Email**](mailto:alramli.hamzah@gmail.com)
 
 <sub>Cybersecurity graduate · defensive security · incident response · digital forensics</sub>
+
+<details>
+<summary><sub>⌁ OPERATOR PORTRAIT — ASCII, rendered from a photograph</sub></summary>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/portrait-light.svg">
+  <img src="./assets/portrait-dark.svg" width="72%" alt="ASCII portrait of Hamzah Al-Ramli, rendered from a photograph at 100 columns">
+</picture>
+
+<sub>100 columns &#183; 21 glyphs, ramp calibrated by measured ink coverage</sub>
+
+</div>
+
+</details>
