@@ -4,7 +4,7 @@
 <table align="center">
   <tr>
     <td width="42%" valign="middle">
-      <img src="./assets/wrench-led.gif?v=1" width="100%" alt="Goodnbad — dithered Wrench-style mask with a live LED visor">
+      <img src="./assets/wrench-led.gif?v=2" width="100%" alt="Goodnbad — dithered Wrench-style mask with a live LED visor">
     </td>
     <td width="58%" valign="middle">
       <img src="./assets/signal.svg" width="100%" alt="Live terminal — security-minded builder from Riyadh">
