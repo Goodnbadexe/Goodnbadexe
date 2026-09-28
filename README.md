@@ -37,8 +37,8 @@ I build secure systems, automate messy work, and turn technical ideas into clear
 ### ⌁ RECENT SIGNAL
 
 <!-- SIGNAL:START -->
-- [**heyazah.sa**](https://github.com/Goodnbadexe/heyazah.sa) — new bweb  `PHP`
 - [**MagicB**](https://github.com/Goodnbadexe/MagicB) — Overall, the Magic Browser combines intelligent search, privacy and security feature…  `HTML`
+- [**heyazah.sa**](https://github.com/Goodnbadexe/heyazah.sa) — new bweb  `PHP`
 <!-- SIGNAL:END -->
 
 ### ⌁ CONTACT
