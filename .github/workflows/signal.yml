@@ -27,24 +27,37 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           # comma-separated repo names that must never appear in the signal block
-          SIGNAL_DENY: "hello"
+          SIGNAL_DENY: "hello,heyazah.sa,TESTINGWEBSITE,Goodnbad.exe-e9,NewRepo,thebuildsequence-assets,ASCII-Art-Converter,GOOGLEME,MacOS_React,Github-Achievements,scratch"
         run: |
           set -euo pipefail
 
           # 5 most-recently-pushed public, non-fork, non-archived repos that carry a
-          # description (a repo with no description reads as noise in the signal block),
-          # excluding the profile repo itself and the SIGNAL_DENY list.
+          # description (or a curated fallback description), excluding the profile repo
+          # itself and the SIGNAL_DENY list.
           gh api "users/${OWNER}/repos?sort=pushed&per_page=100" --jq '
-            [ .[]
+            ({
+              "MagicB": "Command bar with a built-in AI single-file website builder",
+              "HOS": "Hamzah OS — browser-based phosphor-amber workstation and privacy audit",
+              "Dev-Hamzah-AlRamli": "goodnbad.info — cybersecurity & AI portfolio, Toolkit Vault, and live threat intel",
+              "obsidian-mind-vault": "Obsidian + Claude Code cognitive second-brain vault with 525+ verified hook checks",
+              "tbs-poster": "Autonomous multi-channel social publishing and Remotion reel engine",
+              "synapse": "Local real-time control room and security watchdog for Claude Code agents",
+              "aicut": "AI multi-cam editor and stats-driven Lumetri color grader for Premiere Pro",
+              "gearshift": "Always-on-top 3D cockpit gear shifters for switching drives and Claude models",
+              "claude-skills-catalog": "Auto-generated catalog indexing 1,000+ curated Claude Code skills",
+              "macro-mate": "Desktop utility for manual and automated Claude Code session continuation"
+            }) as $curated
+            | [ .[]
               | select(.fork == false)
               | select(.private == false)
               | select(.archived == false)
-              | select((.description // "") | length > 0)
               | select(.name != "'"${OWNER}"'")
               | select(.name as $n | ("'"${SIGNAL_DENY}"'" | split(",") | index($n)) == null)
+              | . + { effective_desc: ($curated[.name] // .description // "") }
+              | select((.effective_desc | length) > 0)
             ][:5]
             | .[]
-            | ((.description // "—") | if (length > 84) then (.[0:84] | rtrimstr(" ")) + "…" else . end) as $desc
+            | (.effective_desc | if (length > 84) then (.[0:84] | rtrimstr(" ")) + "…" else . end) as $desc
             | "- [**\(.name)**](\(.html_url)) — \($desc)"
                 + (if .language then "  `\(.language)`" else "" end)
           ' > block.md || true
