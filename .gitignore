@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+block.md
+.DS_Store
+Thumbs.db
