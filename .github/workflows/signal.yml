@@ -45,7 +45,8 @@ jobs:
               "aicut": "AI multi-cam editor and stats-driven Lumetri color grader for Premiere Pro",
               "gearshift": "Always-on-top 3D cockpit gear shifters for switching drives and Claude models",
               "claude-skills-catalog": "Auto-generated catalog indexing 1,000+ curated Claude Code skills",
-              "macro-mate": "Desktop utility for manual and automated Claude Code session continuation"
+              "macro-mate": "Desktop utility for manual and automated Claude Code session continuation",
+              "dev-hamzah-mobile-app": "DedSec OS Launcher (v2.9.1) — cyber HUD Android shell, Bagley bridge, and toolkit"
             }) as $curated
             | [ .[]
               | select(.fork == false)
