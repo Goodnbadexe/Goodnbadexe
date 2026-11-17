@@ -37,9 +37,9 @@ I build secure systems, automate messy work, and turn technical ideas into clear
 ### ⌁ RECENT SIGNAL
 
 <!-- SIGNAL:START -->
+- [**MagicB**](https://github.com/Goodnbadexe/MagicB) — Command bar with a built-in AI single-file website builder  `HTML`
 - [**apple-silicon-dev-setup**](https://github.com/Goodnbadexe/apple-silicon-dev-setup) — Idempotent Apple Silicon (arm64) macOS developer setup, starter templates, Brewfile,…  `Shell`
 - [**goodnbad-agent-skills**](https://github.com/Goodnbadexe/goodnbad-agent-skills) — skills.sh-compatible agent skills for macOS developer tooling (Ghostty, OrbStack, Pr…  `Python`
-- [**MagicB**](https://github.com/Goodnbadexe/MagicB) — Command bar with a built-in AI single-file website builder  `HTML`
 <!-- SIGNAL:END -->
 
 ### ⌁ CONTACT
